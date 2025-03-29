@@ -22,6 +22,6 @@ const LandingSection = () => {
             </div>
         </section>
     );
-};32
+}
 
 export default LandingSection;
