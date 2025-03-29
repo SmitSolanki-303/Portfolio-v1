@@ -1,38 +1,127 @@
+/* App.css */
 .App {
-  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  transition: top 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.social-icon {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.left {
+  display: flex;
+}
+
+.right {
+  display: flex;
+}
+
+section {
+  padding: 20px;
+  margin-top: 50px;
+}
+
+#landing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.section-content {
+  display: flex;
+  margin-left: 35%;
+}
+
+.img-name {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 30%;
 }
 
-.App-link {
-  color: #61dafb;
+.landing-container p {
+  font-size: 3rem;
+  font-weight: bolder;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.projects-grid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+
+.project-card {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  width: 25rem;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: black;
+}
+
+.image1-class {
+  height: 200px;
+  width: 400px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+input,
+textarea,
+select { 
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  max-width: 100%;
+  width: 100%;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #555;
 }
